@@ -11,3 +11,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.left-sec{
+  background-color: aqua;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.right-sec{
+  background-color: aquamarine;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup-container{
+  display: flex;
+  min-height: 600px;
+}
+.header-tag{
+  font-size: 30px;
+}
+.input-component{
+  min-height: 10px;
+  min-width: 150px;
+  padding: 10px;
+}
+.input-component{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.c-check{
+  display: flex;
+  text-align: left;
+}
+.check-input{
+  width: 20px;
+  height: 20px;
+  margin-left: -28px;
+}
+.b-button{
+  width:193px;
+  height:35px;
+  background-color: rgb(48, 47, 47);
+  color: white;
+  border: none;
+}
+.bottom-btn{
+  margin-top: 10px;
+}
+.label-text{
+  margin-left: 10px;
+  font-size: 16px;
+}
