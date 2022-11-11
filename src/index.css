@@ -1,70 +1,143 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.left-sec{
-  background-color: aqua;
+.left-sec {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
 }
-.right-sec{
-  background-color: aquamarine;
+.right-sec {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.signup-container{
+.signup-container {
   display: flex;
   min-height: 600px;
 }
-.header-tag{
+.header-tag {
   font-size: 30px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  margin-left: -113px;
 }
-.input-component{
-  min-height: 10px;
-  min-width: 150px;
-  padding: 10px;
-}
-.input-component{
+.input-component-main {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  margin-bottom: 15px;
 }
-.c-check{
+.input-component {
+  border: 2px solid black;
+  min-height: 15px;
+  min-width: 180px;
+  padding: 10px;
+}
+.c-check {
   display: flex;
   text-align: left;
+  margin: 5px 0px;
 }
-.check-input{
+.check-input {
   width: 20px;
   height: 20px;
-  margin-left: -28px;
+  margin-left: -40px;
+  border: 1px solid black !important;
 }
-.b-button{
-  width:193px;
-  height:35px;
+.b-button {
+  width: 205px;
+  height: 35px;
   background-color: rgb(48, 47, 47);
   color: white;
   border: none;
 }
-.bottom-btn{
+.bottom-btn {
   margin-top: 10px;
 }
-.label-text{
-  margin-left: 10px;
+.label-text {
+  margin-left: 7px;
   font-size: 16px;
+  font-weight: 600;
 }
+.sub-head {
+  display: flex;
+  margin-bottom: 15px;
+}
+.span-one {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+.span-two {
+  color: rgb(0, 115, 209);
+  font-weight: 400;
+}
+
+hr {
+  border: none;
+  border-top: 3px double rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 30px 0px;
+}
+
+hr:after {
+  background: #fff;
+  content: "Or sign in with ";
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+
+.image-element {
+  width: 47px;
+  margin: 0px 2px;
+}
+.bottom-elements {
+  display: flex;
+}
+.name {
+  width: 70px;
+  margin: 0px 10px;
+}
+img.image{
+width: 60px;
+margin-left: 10px;
+}
+
+.api-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width:714px){
+  .right-sec{
+    display: none !important;
+  }
+}
+.right-sec{
+  display: block;
+  padding: 100px;
+}
+input::placeholder{
+  color: black;
+  font-weight: 500;
+}
+
